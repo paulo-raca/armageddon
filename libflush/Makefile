@@ -16,7 +16,6 @@ ifeq "${ARCH}" "armv7"
 endif
 
 ifeq "${ARCH}" "armv8"
-	CPPFLAGS += -D__ARM_ARCH_8A__
 	include config-arm64.mk
 endif
 

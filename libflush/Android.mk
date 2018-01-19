@@ -15,9 +15,6 @@ LOCAL_SRC_FILES += $(wildcard libflush/eviction/*.c)
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
 USE_EVICTION = 1
 endif
-ifeq ($(TARGET_ARCH_ABI),arm64-v8a)
-LOCAL_CFLAGS += -D__ARM_ARCH_8A__
-endif
 
 ifeq (,$(findstring ${TIME_SOURCE},${TIME_SOURCES}))
 $(error ${TIME_SOURCE} is an invalid time source. $(TIME_SOURCES))
