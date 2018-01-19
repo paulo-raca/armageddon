@@ -8,6 +8,7 @@
 #include "libflush.h"
 
 #if ANDROID_PLATFORM < 21
+#include <unistd.h>
 #include <sys/syscall.h>
 #include <string.h>
 
